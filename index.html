@@ -308,8 +308,6 @@
 
             function populateOutputData() {
                 // Populate Page 1
-                document.getElementById('output-school-name').textContent = document.getElementById('school-name').value;
-                document.getElementById('output-office-name').textContent = document.getElementById('office-name').value;
                 document.getElementById('output-plc-level').textContent = document.getElementById('plc-level').value;
                 document.getElementById('output-plc-number').textContent = document.getElementById('plc-number').value;
                 const dateValue = document.getElementById('plc-date').value;
@@ -412,8 +410,6 @@
                     for (let i = 1; i <= 10; i++) members.push(document.getElementById(`member-${i}`).value || '');
                     
                     const formData = {
-                        schoolName: document.getElementById('school-name').value,
-                        officeName: document.getElementById('office-name').value,
                         plcLevel: document.getElementById('plc-level').value,
                         plcNumber: document.getElementById('plc-number').value,
                         plcDate: document.getElementById('plc-date').value,
@@ -469,5 +465,6 @@
     </script>
 </body>
 </html>
+
 
 
